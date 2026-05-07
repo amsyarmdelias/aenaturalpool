@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AE Natural Pool — Natural Pool Design & Conversion Malaysia</title>
+<meta name="description" content="We design and convert swimming pools into stable, naturally filtered ecosystems. Stop dealing with green water, chemicals, and maintenance headaches. Malaysia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --stone:      #1e1b16;
+  --stone-mid:  #28241d;
+  --stone-lt:   #363028;
+  --moss:       #6b8a64;
+  --teal:       #5a9196;
+  --cream:      #f0ebe3;
+  --cream-dk:   #d5ccbf;
+  --gold:       #c9a96e;
+  --gold-lt:    #dfc08a;
+  --body:       #b8afa2;
+  --dim:        #6e6659;
+  --red:        #8b4040;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--stone);
+  color:var(--cream);
+  font-family:'DM Sans',sans-serif;
+  font-weight:300;
+  font-size:18px;
+  line-height:1.75;
+  overflow-x:hidden;
+}
+
+/* ─── NAV ─── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  padding:18px 48px;
+  display:flex;align-items:center;justify-content:space-between;
+  background:linear-gradient(to bottom,rgba(30,27,22,.97) 0%,transparent 100%);
+}
+.logo{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.2rem;font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--cream);
+}
+.logo span{color:var(--gold);}
+.nav-btn{
+  background:var(--gold);color:var(--stone);
+  font-size:.8rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;
+  padding:12px 26px;text-decoration:none;display:inline-block;
+  transition:background .2s,transform .15s;
+}
+.nav-btn:hover{background:var(--gold-lt);transform:translateY(-1px);}
+
+/* ─── HERO ─── */
+.hero{
+  min-height:100vh;position:relative;
+  display:flex;align-items:flex-end;
+  padding:0 52px 96px;overflow:hidden;
+}
+.hero-bg{position:absolute;inset:0;overflow:hidden;}
+.hero-bg video{
+  width:100%;height:100%;object-fit:cover;object-position:center top;
+  opacity:.6;
+}
+.hero-bg::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(160deg,
+    rgba(30,27,22,.5) 0%,
+    rgba(30,27,22,.05) 35%,
+    rgba(30,27,22,.75) 65%,
+    rgba(30,27,22,1) 100%);
+}
+.hero-content{position:relative;z-index:2;max-width:800px;}
+.eyebrow{
+  font-size:.75rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:22px;
+  opacity:0;animation:up .7s .2s forwards;
+}
+h1{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(3rem,6.5vw,5.8rem);font-weight:300;
+  line-height:1.05;letter-spacing:-.01em;margin-bottom:28px;
+  opacity:0;animation:up .8s .4s forwards;
+}
+h1 em{font-style:italic;color:var(--teal);}
+.hero-sub{
+  font-size:1.15rem;line-height:1.75;color:var(--cream-dk);
+  max-width:600px;margin-bottom:40px;
+  opacity:0;animation:up .8s .6s forwards;
+}
+.hero-sub strong{color:var(--cream);font-weight:400;}
+.hero-actions{
+  display:flex;align-items:center;gap:28px;flex-wrap:wrap;
+  opacity:0;animation:up .8s .8s forwards;
+}
+.btn{
+  background:var(--gold);color:var(--stone);
+  font-size:.9rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;
+  padding:18px 40px;text-decoration:none;display:inline-block;
+  transition:background .2s,transform .2s,box-shadow .2s;
+}
+.btn:hover{background:var(--gold-lt);transform:translateY(-2px);box-shadow:0 10px 40px rgba(201,169,110,.3);}
+.hero-note{font-size:.88rem;color:var(--dim);line-height:1.6;}
+
+@keyframes up{from{opacity:0;transform:translateY(28px);}to{opacity:1;transform:none;}}
+
+/* ─── REFRAME ─── */
+.reframe{
+  background:var(--stone-mid);
+  border-top:1px solid rgba(201,169,110,.15);
+  border-bottom:1px solid rgba(201,169,110,.15);
+  padding:26px 52px;text-align:center;
+}
+.reframe p{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.4rem;font-style:italic;color:var(--cream-dk);
+}
+.reframe strong{color:var(--gold);font-style:normal;}
+
+/* ─── PROBLEMS ─── */
+.problems{background:var(--stone-mid);padding:0 52px 56px;}
+.prob-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:3px;max-width:1200px;margin:0 auto;}
+.prob-card{background:var(--stone);padding:30px 22px;}
+.prob-x{font-size:1.1rem;color:var(--red);margin-bottom:10px;display:block;}
+.prob-card p{font-size:.95rem;line-height:1.6;color:var(--body);}
+
+/* ─── SECTION SHARED ─── */
+.section-inner{max-width:1200px;margin:0 auto;}
+.sec-label{
+  font-size:.72rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:18px;display:block;
+}
+.sec-h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2.2rem,3.8vw,3.4rem);font-weight:300;line-height:1.1;margin-bottom:20px;
+}
+.sec-h2 em{font-style:italic;color:var(--teal);}
+
+/* ─── PROOF (BUILT NOT THEORY) ─── */
+.built{background:var(--stone);padding:96px 52px;position:relative;}
+.built::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(to right,transparent,rgba(201,169,110,.2) 40%,transparent);
+}
+.built-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;}
+.built-left p{font-size:1rem;line-height:1.85;color:var(--body);margin-bottom:18px;}
+.built-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:36px;}
+.stat{background:var(--stone-mid);padding:22px 16px;text-align:center;}
+.stat-n{
+  font-family:'Cormorant Garamond',serif;
+  font-size:2.2rem;font-weight:300;color:var(--gold);line-height:1;display:block;
+}
+.stat-l{
+  font-size:.7rem;color:var(--dim);letter-spacing:.08em;text-transform:uppercase;
+  display:block;margin-top:6px;line-height:1.4;
+}
+
+/* Video mosaic */
+.vid-mosaic{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:3px;}
+.vid-wrap{position:relative;overflow:hidden;background:var(--stone-mid);}
+.vid-wrap video{width:100%;height:100%;object-fit:cover;display:block;}
+.vid-main{grid-row:1/3;aspect-ratio:9/16;}
+.vid-small{aspect-ratio:4/3;}
+.vid-cap{
+  position:absolute;bottom:0;left:0;right:0;
+  background:linear-gradient(to top,rgba(30,27,22,.85),transparent);
+  padding:18px 14px 12px;
+  font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--cream-dk);
+}
+
+/* ─── HOW IT WORKS ─── */
+.how{background:var(--stone-mid);padding:96px 52px;}
+.bridge{
+  border-left:3px solid var(--gold);
+  padding:14px 0 14px 26px;margin-bottom:56px;
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.3rem;font-style:italic;color:var(--cream-dk);line-height:1.65;
+  max-width:720px;
+}
+.how-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;}
+
+.sys-box{background:var(--stone);border:1px solid rgba(201,169,110,.12);padding:28px;margin-top:32px;}
+.sys-lbl{font-size:.63rem;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);margin-bottom:18px;}
+.flow-row{display:flex;align-items:center;gap:16px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.05);}
+.flow-row:last-child{border-bottom:none;}
+.flow-ico{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;}
+.ico-swim{background:rgba(61,107,110,.25);}
+.ico-bog{background:rgba(74,94,69,.3);}
+.ico-ret{background:rgba(139,115,85,.2);}
+.flow-row strong{display:block;font-size:.85rem;font-weight:500;color:var(--cream);margin-bottom:2px;}
+.flow-row span{font-size:.75rem;color:var(--dim);}
+.flow-arr{text-align:center;color:var(--gold);font-size:.75rem;opacity:.4;padding:4px 0;margin-left:28px;}
+
+.how-right{display:flex;flex-direction:column;}
+.ben{padding:28px 0;border-bottom:1px solid rgba(255,255,255,.06);display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;}
+.ben:first-child{padding-top:0;}
+.ben:last-child{border-bottom:none;}
+.ben-n{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--gold);opacity:.3;line-height:1;}
+.ben strong{display:block;font-size:.97rem;font-weight:500;color:var(--cream);margin-bottom:7px;}
+.ben p{font-size:.92rem;line-height:1.8;color:var(--body);}
+
+/* ─── SERVICES ─── */
+.services{background:var(--stone);padding:96px 52px;}
+.svc-intro p{font-size:1rem;color:var(--body);margin-top:10px;}
+.svc-guide{
+  background:rgba(201,169,110,.07);border:1px solid rgba(201,169,110,.2);
+  padding:18px 26px;margin:28px 0 36px;
+  display:flex;align-items:flex-start;gap:14px;
+}
+.svc-guide .arr{color:var(--gold);font-size:1.2rem;flex-shrink:0;margin-top:2px;}
+.svc-guide p{font-size:.97rem;color:var(--cream-dk);line-height:1.6;}
+.svc-guide strong{color:var(--gold);font-weight:500;}
+.svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px;}
+.svc-card{
+  background:var(--stone-mid);padding:44px 38px;
+  position:relative;overflow:hidden;transition:transform .3s;
+}
+.svc-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:0;background:var(--gold);transition:height .4s;}
+.svc-card:hover::before{height:100%;}
+.svc-card:hover{transform:translateY(-3px);}
+.svc-tag{display:inline-block;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;padding:5px 12px;margin-bottom:22px;font-weight:500;}
+.tag-new{background:rgba(74,94,69,.28);color:var(--moss);}
+.tag-conv{background:rgba(61,107,110,.22);color:var(--teal);}
+.svc-card h3{font-family:'Cormorant Garamond',serif;font-size:1.75rem;font-weight:300;line-height:1.2;margin-bottom:14px;}
+.svc-card>p{font-size:.95rem;line-height:1.78;color:var(--body);margin-bottom:26px;}
+.svc-steps{display:flex;flex-direction:column;gap:10px;margin-bottom:28px;}
+.svc-step{display:flex;align-items:center;gap:12px;font-size:.92rem;color:var(--dim);}
+.svc-dot{width:5px;height:5px;border-radius:50%;background:var(--gold);opacity:.45;flex-shrink:0;}
+.svc-price{font-size:.8rem;letter-spacing:.08em;color:var(--dim);text-transform:uppercase;padding-top:18px;border-top:1px solid rgba(255,255,255,.07);}
+.svc-price strong{color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:400;letter-spacing:0;margin-right:4px;}
+.svc-note{font-size:.8rem;color:var(--dim);font-style:italic;margin-top:7px;line-height:1.5;}
+
+/* ─── GUEST PROOF ─── */
+.guests{background:var(--stone-mid);padding:96px 52px;}
+.guests-hdr{text-align:center;margin-bottom:52px;}
+.guests-hdr p{font-size:.97rem;color:var(--body);max-width:520px;margin:12px auto 0;}
+.rebook{
+  background:rgba(201,169,110,.06);border:1px solid rgba(201,169,110,.18);
+  padding:22px 28px;margin-bottom:36px;
+  display:flex;gap:16px;align-items:flex-start;
+}
+.rebook .ico{font-size:1.3rem;flex-shrink:0;margin-top:2px;}
+.rebook p{font-size:.97rem;color:var(--cream-dk);line-height:1.7;}
+.rebook strong{color:var(--gold);font-weight:500;}
+.guest-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:3px;}
+.guest-card{background:var(--stone);padding:34px 28px;}
+.guest-tag{font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:14px;display:block;}
+.guest-q{font-family:'Cormorant Garamond',serif;font-size:2.8rem;line-height:1;color:var(--gold);opacity:.22;margin-bottom:8px;}
+.guest-text{font-size:.97rem;line-height:1.78;color:var(--cream-dk);margin-bottom:8px;font-style:italic;}
+.guest-orig{font-size:.78rem;color:var(--dim);margin-bottom:18px;line-height:1.55;}
+.guest-who{font-size:.78rem;color:var(--dim);}
+.guest-who strong{display:block;color:var(--cream);font-weight:400;margin-bottom:2px;font-style:normal;}
+.guest-card img{width:100%;display:block;border-radius:2px;margin:12px 0;}
+.guest-highlight{font-size:.88rem;color:var(--cream-dk);line-height:1.6;font-style:italic;}
+
+/* ─── FAQ ─── */
+.faq{background:var(--stone);padding:96px 52px;}
+.faq-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:96px;}
+.faq-left h2{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:300;line-height:1.15;margin-bottom:16px;}
+.faq-left h2 em{font-style:italic;color:var(--teal);}
+.faq-left p{font-size:.95rem;line-height:1.8;color:var(--body);margin-top:14px;}
+.faq-item{border-bottom:1px solid rgba(255,255,255,.07);}
+.faq-q{
+  padding:22px 0;font-size:.97rem;font-weight:400;color:var(--cream);
+  cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;
+  user-select:none;transition:color .2s;
+}
+.faq-q:hover{color:var(--gold);}
+.faq-icon{font-size:1.3rem;color:var(--gold);transition:transform .3s;flex-shrink:0;line-height:1;}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s;font-size:.93rem;line-height:1.85;color:var(--body);}
+.faq-item.open .faq-a{max-height:260px;padding-bottom:26px;}
+.faq-item.open .faq-icon{transform:rotate(45deg);}
+
+/* ─── CTA ─── */
+.cta{background:var(--stone-mid);padding:112px 52px;position:relative;overflow:hidden;text-align:center;}
+.cta::before{
+  content:'';position:absolute;top:-100px;left:50%;transform:translateX(-50%);
+  width:800px;height:500px;
+  background:radial-gradient(ellipse,rgba(61,107,110,.12) 0%,transparent 70%);
+  pointer-events:none;
+}
+.cta .sec-label{display:block;margin-bottom:14px;}
+.cta h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2.4rem,5vw,4rem);font-weight:300;line-height:1.1;margin-bottom:18px;position:relative;
+}
+.cta h2 em{font-style:italic;color:var(--teal);}
+.money{
+  background:rgba(201,169,110,.08);border:1px solid rgba(201,169,110,.2);
+  display:inline-block;padding:13px 30px;
+  font-size:.97rem;color:var(--cream-dk);line-height:1.6;margin-bottom:44px;position:relative;
+}
+.money strong{color:var(--gold);font-weight:500;}
+.cta-box{
+  background:var(--stone);border:1px solid rgba(201,169,110,.16);
+  max-width:460px;margin:0 auto;padding:44px 36px;
+}
+.cta-box h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:400;margin-bottom:8px;}
+.price-row{
+  font-size:.8rem;color:var(--dim);margin-bottom:28px;
+  display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;
+}
+.badge{background:rgba(201,169,110,.12);color:var(--gold);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;padding:3px 10px;}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:22px;}
+.opt{border:1px solid rgba(255,255,255,.09);padding:15px 14px;cursor:pointer;transition:border-color .2s,background .2s;text-align:left;}
+.opt:hover,.opt.active{border-color:var(--gold);background:rgba(201,169,110,.07);}
+.opt strong{display:block;font-size:.85rem;color:var(--cream);margin-bottom:3px;}
+.opt span{font-size:.72rem;color:var(--dim);line-height:1.4;}
+.book-btn{
+  display:block;width:100%;background:var(--gold);color:var(--stone);
+  font-size:.9rem;font-weight:500;letter-spacing:.13em;text-transform:uppercase;
+  padding:19px;border:none;cursor:pointer;text-decoration:none;
+  transition:background .2s,transform .15s;margin-bottom:16px;
+}
+.book-btn:hover{background:var(--gold-lt);transform:translateY(-2px);}
+.micro{display:flex;align-items:center;justify-content:center;gap:10px;font-size:.78rem;color:var(--dim);flex-wrap:wrap;margin-bottom:12px;}
+.micro span{color:var(--cream-dk);}
+.micro em{color:var(--gold);opacity:.5;font-style:normal;}
+.reassure{font-size:.75rem;color:var(--dim);}
+
+/* ─── FOOTER ─── */
+footer{background:#131009;padding:44px 52px;border-top:1px solid rgba(201,169,110,.08);}
+.footer-inner{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:28px;margin-bottom:28px;}
+.f-brand{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--cream);}
+.f-brand span{color:var(--gold);}
+.f-tag{font-size:.73rem;color:var(--dim);margin-top:5px;}
+.f-links{display:flex;flex-direction:column;gap:8px;align-items:flex-end;}
+.f-links a{color:var(--dim);text-decoration:none;font-size:.82rem;transition:color .2s;}
+.f-links a:hover{color:var(--gold);}
+.f-copy{font-size:.7rem;color:var(--dim);border-top:1px solid rgba(255,255,255,.05);padding-top:22px;}
+
+/* ─── REVEAL ─── */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.visible{opacity:1;transform:none;}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:900px){
+  body{font-size:16px;}
+  nav{padding:16px 22px;}
+  .hero{padding:0 24px 80px;}
+  .reframe{padding:22px 24px;}
+  .problems{padding:0 22px 44px;}
+  .prob-grid{grid-template-columns:1fr 1fr;}
+  .built,.how,.services,.guests,.faq,.cta{padding:72px 24px;}
+  .built-grid,.how-grid,.faq-grid{grid-template-columns:1fr;gap:40px;}
+  .built-stats{grid-template-columns:repeat(3,1fr);}
+  .vid-mosaic{grid-template-columns:1fr 1fr;}
+  .vid-main{grid-row:span 1;aspect-ratio:4/3;}
+  .svc-grid,.guest-grid{grid-template-columns:1fr;}
+  .opts{grid-template-columns:1fr;}
+  .cta-box{padding:30px 22px;}
+  footer{padding:36px 24px;}
+  .f-links{align-items:flex-start;}
+}
+@media(max-width:500px){
+  .prob-grid{grid-template-columns:1fr;}
+  .built-stats{grid-template-columns:1fr 1fr;}
+  .vid-mosaic{grid-template-columns:1fr;}
+  .micro{flex-direction:column;gap:4px;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">AE <span>Natural</span> Pool</div>
+  <a href="#consult" class="nav-btn">Book RM150 Consultation</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <video autoplay muted loop playsinline preload="metadata" poster="images/hero-bg.jpg">
+      <source src="videos/child-pool.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="hero-content">
+    <p class="eyebrow">Natural Pool Design & Conversion · Malaysia</p>
+    <h1>Stop fighting<br>your pool.<br><em>Redesign the system.</em></h1>
+    <p class="hero-sub">
+      We design and convert swimming pools into
+      <strong>stable, low-maintenance natural ecosystems</strong> —
+      so you stop dealing with green water, constant chemicals, and maintenance headaches.
+    </p>
+    <div class="hero-actions">
+      <a href="#consult" class="btn">Book Consultation Now →</a>
+      <span class="hero-note">RM150 · Remote assessment<br>Know if it's possible before you spend more</span>
+    </div>
+  </div>
+</section>
+
+<!-- REFRAME -->
+<div class="reframe">
+  <p>Most pool owners don't have a pool problem. They have a <strong>system design problem.</strong></p>
+</div>
+
+<!-- PROBLEMS -->
+<div class="problems">
+  <div class="prob-grid">
+    <div class="prob-card"><span class="prob-x">✗</span><p>Green or cloudy water that keeps coming back</p></div>
+    <div class="prob-card"><span class="prob-x">✗</span><p>Monthly chemical bills that never stop</p></div>
+    <div class="prob-card"><span class="prob-x">✗</span><p>Unstable water — fine one week, terrible the next</p></div>
+    <div class="prob-card"><span class="prob-x">✗</span><p>Guests or family unhappy with the pool</p></div>
+    <div class="prob-card"><span class="prob-x">✗</span><p>Paid contractors — still no lasting fix</p></div>
+  </div>
+</div>
+
+<!-- BUILT NOT THEORY -->
+<section class="built" id="proof">
+  <div class="section-inner">
+    <div class="built-grid">
+
+      <div class="built-left reveal">
+        <span class="sec-label">Built. Tested. Proven in Malaysia.</span>
+        <h2 class="sec-h2">Not theory.<br><em>An actual working system.</em></h2>
+        <p>This is Elma Farmstay — a real natural pool we designed and built in Malaysia. The water stays clear through biological filtration: bog zones, gravel layers, aquatic plants, and living bacteria working continuously.</p>
+        <p>No chlorine. No chemicals. Guests who came for the farmstay ended up talking about the pool — and some rebooked specifically to come back to it.</p>
+        <div class="built-stats">
+          <div class="stat"><span class="stat-n">~RM20k</span><span class="stat-l">Full build cost</span></div>
+          <div class="stat"><span class="stat-n">6 wks</span><span class="stat-l">To full stability</span></div>
+          <div class="stat"><span class="stat-n">0</span><span class="stat-l">Chlorine after</span></div>
+        </div>
+      </div>
+
+      <div class="built-right reveal">
+        <div class="vid-mosaic">
+          <div class="vid-wrap vid-main">
+            <video autoplay muted loop playsinline preload="none">
+              <source src="videos/child-pool.mp4" type="video/mp4">
+            </video>
+            <div class="vid-cap">Crystal clear — see right to the bottom</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;">
+            <div class="vid-wrap vid-small">
+              <video autoplay muted loop playsinline preload="none">
+                <source src="videos/water-flow.mp4" type="video/mp4">
+              </video>
+              <div class="vid-cap">Water flow system</div>
+            </div>
+            <div class="vid-wrap vid-small">
+              <video autoplay muted loop playsinline preload="none">
+                <source src="videos/bog-filter.mp4" type="video/mp4">
+              </video>
+              <div class="vid-cap">Bog filtration zone</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how">
+  <div class="section-inner">
+    <div class="bridge reveal">
+      Most chlorine pools fail not because of poor maintenance — but because the system was never designed to stay stable. Chemicals treat symptoms. They don't fix the design.
+    </div>
+    <div class="how-grid">
+
+      <div class="how-left reveal">
+        <span class="sec-label">The System</span>
+        <h2 class="sec-h2">Biology does<br>what <em>chemicals can't.</em></h2>
+        <p style="font-size:1rem;line-height:1.85;color:var(--body);max-width:440px;">A natural pool uses a bog filtration zone — aquatic plants, gravel layers, and beneficial bacteria — to continuously clean the water. No shock treatments. No weekly dosing. A living system that regulates itself.</p>
+        <div class="sys-box">
+          <div class="sys-lbl">How water moves through the system</div>
+          <div class="flow-row">
+            <div class="flow-ico ico-swim">🏊</div>
+            <div><strong>Swim Zone</strong><span>Where you swim — kept clear by continuous filtered flow</span></div>
+          </div>
+          <div class="flow-arr">↓ water flows to</div>
+          <div class="flow-row">
+            <div class="flow-ico ico-bog">🌿</div>
+            <div><strong>Bog Filtration Zone</strong><span>Gravel + plants + biology removes nutrients and algae at the source</span></div>
+          </div>
+          <div class="flow-arr">↓ clean water returns</div>
+          <div class="flow-row">
+            <div class="flow-ico ico-ret">💧</div>
+            <div><strong>Return Flow</strong><span>Filtered water re-enters swim zone — cycle repeats</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="how-right reveal">
+        <div class="ben">
+          <span class="ben-n">01</span>
+          <div><strong>Naturally clear water, year-round</strong><p>The biological system continuously processes the nutrients that cause algae — clarity is an outcome of the ecosystem, not the products you pour in.</p></div>
+        </div>
+        <div class="ben">
+          <span class="ben-n">02</span>
+          <div><strong>Eliminates ongoing chemical dependency</strong><p>In a properly designed natural system, chlorine dependency is eliminated — not just reduced. Less intervention. More stability.</p></div>
+        </div>
+        <div class="ben">
+          <span class="ben-n">03</span>
+          <div><strong>Safe and noticeably different to swim in</strong><p>No chlorine irritation. Soft, natural water guests feel immediately — the kind that gets talked about, photographed, and remembered.</p></div>
+        </div>
+        <div class="ben">
+          <span class="ben-n">04</span>
+          <div><strong>A real attraction for your property</strong><p>For homestay owners, a natural pool isn't just functional — it's a rebooking reason. Real guests returned to Elma Farmstay specifically because of the pool.</p></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+  <div class="section-inner">
+    <div class="svc-intro reveal">
+      <span class="sec-label">Our Services</span>
+      <h2 class="sec-h2">Two paths.<br><em>One starting point.</em></h2>
+      <p>Whether building from zero or transforming a struggling pool — both begin with one low-commitment step.</p>
+    </div>
+    <div class="svc-guide reveal">
+      <span class="arr">→</span>
+      <p><strong>Start with the RM150 consultation.</strong> We'll assess your situation and tell you exactly which path makes sense — before you commit to anything further. Most clients move forward only after this confirms it's the right fit.</p>
+    </div>
+    <div class="svc-grid reveal">
+      <div class="svc-card">
+        <span class="svc-tag tag-new">New Build</span>
+        <h3>Natural Pool<br>from Scratch</h3>
+        <p>For landowners, homestay developers, and homeowners building a natural swimming feature from the ground up — designed right from day one.</p>
+        <div class="svc-steps">
+          <div class="svc-step"><span class="svc-dot"></span>Consultation — RM150</div>
+          <div class="svc-step"><span class="svc-dot"></span>Site Visit — RM500–RM800</div>
+          <div class="svc-step"><span class="svc-dot"></span>Concept Design — RM1,500–RM2,500</div>
+          <div class="svc-step"><span class="svc-dot"></span>Full Ecosystem Design — RM3,000–RM5,500</div>
+        </div>
+        <div class="svc-price">Start at <strong>RM150</strong></div>
+        <div class="svc-note">Most clients move to the next stage after consultation confirms suitability.</div>
+      </div>
+      <div class="svc-card">
+        <span class="svc-tag tag-conv">Conversion · Core Speciality</span>
+        <h3>Convert Your<br>Chlorine Pool</h3>
+        <p>Your pool is already built — we redesign the system from within. For owners with algae problems, green water, or chemical fatigue who want a permanent fix.</p>
+        <div class="svc-steps">
+          <div class="svc-step"><span class="svc-dot"></span>Conversion Consultation — RM150</div>
+          <div class="svc-step"><span class="svc-dot"></span>Site Visit — RM800–RM1,500</div>
+          <div class="svc-step"><span class="svc-dot"></span>Conversion Concept — RM2,000–RM3,000</div>
+          <div class="svc-step"><span class="svc-dot"></span>Full Conversion Design — RM3,500–RM5,500</div>
+        </div>
+        <div class="svc-price">Start at <strong>RM150</strong></div>
+        <div class="svc-note">Assess feasibility before committing — that's what the consultation is for.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GUEST PROOF -->
+<section class="guests">
+  <div class="section-inner">
+    <div class="guests-hdr reveal">
+      <span class="sec-label">Real Guest Reactions</span>
+      <h2 class="sec-h2">This is what happens when<br>the <em>system is designed correctly.</em></h2>
+      <p>Unsolicited WhatsApp feedback from guests at Elma Farmstay — the natural pool we designed.</p>
+    </div>
+    <div class="rebook reveal">
+      <span class="ico">🔁</span>
+      <p>Puan Farha checked out — then asked about rebooking <strong>for August</strong> in the same conversation. Her favourite part? <strong>"Especially the pond."</strong> That's what a well-designed natural pool does to a guest experience.</p>
+    </div>
+    <div class="guest-grid reveal">
+      <div class="guest-card">
+        <span class="guest-tag">Puan Migha · WhatsApp checkout</span>
+        <img src="images/review-migha.jpg" alt="Guest review Puan Migha" loading="lazy">
+        <p class="guest-highlight">"Warm kolam" — the pool was her #1 favourite</p>
+      </div>
+      <div class="guest-card">
+        <span class="guest-tag">Puan Nina · WhatsApp checkout</span>
+        <img src="images/review-nina.jpg" alt="Guest review Puan Nina" loading="lazy">
+        <p class="guest-highlight">"Homestay ni unik. Tak macam homestay biasa."</p>
+      </div>
+      <div class="guest-card">
+        <span class="guest-tag">Puan Farha · rebooked same conversation 🔁</span>
+        <img src="images/review-farha.jpg" alt="Guest review Puan Farha" loading="lazy">
+        <p class="guest-highlight">"Especially the pond" — asked to rebook for August while still checking out</p>
+      </div>
+      <div class="guest-card">
+        <span class="guest-tag">Puan Azura · WhatsApp checkout</span>
+        <img src="images/review-azura.jpg" alt="Guest review Puan Azura" loading="lazy">
+        <p class="guest-highlight">"Natural pool tu lah. Sangat intresting."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="section-inner">
+    <div class="faq-grid">
+      <div class="faq-left reveal">
+        <span class="sec-label">Before You Ask</span>
+        <h2>Questions we<br><em>answer first.</em></h2>
+        <p>We'd rather you have full clarity before booking anything.</p>
+      </div>
+      <div class="reveal">
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">Why not just hire a pool contractor?<span class="faq-icon">+</span></div>
+          <div class="faq-a">Most contractors build pools — they don't design ecological water systems. That's why many pools look great on day one and become unstable over time. We produce a complete design blueprint that any contractor can execute — but the system logic, filtration design, and long-term stability planning is our work, not theirs.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">Can my existing pool be converted?<span class="faq-icon">+</span></div>
+          <div class="faq-a">Most pools can be converted, but suitability depends on structural setup, available space for a bog zone, and current circulation system. That's exactly what the RM150 remote consultation determines — we assess photos and videos first, so you know before committing to anything.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">Do I still need chemicals after conversion?<span class="faq-icon">+</span></div>
+          <div class="faq-a">In a properly designed natural pool, ongoing chlorine dependency is eliminated. During the establishment phase (4–8 weeks), minimal intervention may be needed. The goal is a self-sustaining system — not a reduction in chemicals, but their elimination.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">How long until the system stabilises?<span class="faq-icon">+</span></div>
+          <div class="faq-a">Expect 4–8 weeks for full biological establishment. Water may fluctuate during this period — that's normal. Once the bog bacteria colony matures and plant root systems are established, the system self-regulates. Elma Farmstay reached stable clarity within 6 weeks.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">Do you build or maintain the pool?<span class="faq-icon">+</span></div>
+          <div class="faq-a">We design; we don't build. We produce complete design blueprints and contractor execution guidance. The physical build is done by your chosen contractor. This keeps our designs focused purely on what's right for your system.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">What do I send for the remote consultation?<span class="faq-icon">+</span></div>
+          <div class="faq-a">For existing pools: clear photos and short videos of the pool, pump area, and surrounding space. For new builds: photos of the land and rough measurements. We do the diagnostic work — you just show us what you have.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">Is this designed for Malaysia's climate?<span class="faq-icon">+</span></div>
+          <div class="faq-a">Yes — entirely. Our designs account for tropical heat, humidity, rainfall patterns, and local plant species. This isn't a European concept adapted for Malaysia. It's designed from the ground up for our conditions — and we have a working system here to prove it.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="consult">
+  <span class="sec-label">The First Step</span>
+  <h2>Book a <em>RM150 Consultation.</em><br>Know before you commit.</h2>
+  <div class="money">Most clients come to us after spending thousands trying to fix their pool. <strong>This RM150 avoids that.</strong></div>
+  <div class="cta-box reveal">
+    <h3>Book Your Consultation</h3>
+    <div class="price-row"><span class="badge">RM150</span>Remote · No site visit required yet</div>
+    <div class="opts">
+      <div class="opt active" onclick="pick(this)"><strong>🌿 New Build</strong><span>Building a natural pool from scratch</span></div>
+      <div class="opt" onclick="pick(this)"><strong>🔄 Convert Existing</strong><span>Transform my chlorine pool</span></div>
+    </div>
+    <a href="https://wa.me/60169628464?text=Hi%2C%20I%27d%20like%20to%20book%20a%20consultation%20with%20AE%20Natural%20Pool." class="book-btn" target="_blank">Book Consultation Now →</a>
+    <div class="micro">
+      <span>Send photos</span><em>→</em>
+      <span>Get clear answer</span><em>→</em>
+      <span>Decide next step</span>
+    </div>
+    <div class="reassure">No hard selling · Honest assessment · Reply within 24 hours</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="f-brand">AE <span>Natural</span> Pool</div>
+      <div class="f-tag">Water System Transformation Designers · Malaysia</div>
+      <div class="f-tag" style="margin-top:4px;color:var(--gold);opacity:.7;">aenaturalpool.com</div>
+    </div>
+    <div class="f-links">
+      <a href="https://wa.me/60169628464" target="_blank">WhatsApp: +6016-962-8464</a>
+      <a href="#consult">Book Consultation</a>
+      <a href="#proof">See Real Project</a>
+      <span style="font-size:.72rem;color:var(--dim);">We design; we don't build</span>
+    </div>
+  </div>
+  <div class="f-copy">© 2025 AE Natural Pool. Natural pool design & conversion specialists in Malaysia. All pricing subject to project scope assessment.</div>
+</footer>
+
+<script>
+function toggleFaq(el){
+  const item=el.parentElement;
+  const open=item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+  if(!open)item.classList.add('open');
+}
+function pick(el){
+  document.querySelectorAll('.opt').forEach(o=>o.classList.remove('active'));
+  el.classList.add('active');
+}
+const obs=new IntersectionObserver((entries)=>{
+  entries.forEach((e,i)=>{
+    if(e.isIntersecting){
+      setTimeout(()=>e.target.classList.add('visible'),i*70);
+      obs.unobserve(e.target);
+    }
+  });
+},{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
